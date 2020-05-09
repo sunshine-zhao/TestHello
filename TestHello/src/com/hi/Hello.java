@@ -31,11 +31,11 @@ public static void main(String[] args) {
 //	String default1 = getStringOrDefault("1",String.valueOf(1));
 //	System.out.println(default1);
 	Map map =new HashMap();
-	map.put("abc",null);
+	map.put("abaac",null);
 	map.put("c",new ArrayList());
 	map.put("time","20200521");
 	map.put("time1","2020052");
-	System.out.println(map.get("abc"));
+	System.out.println(map.get("abaac"));
 	System.out.println(map.get("c"));
 	System.out.println(map);
 	String ss="01,00";
