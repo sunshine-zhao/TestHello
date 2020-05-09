@@ -1,8 +1,14 @@
 package com.hi;
 
+import java.math.BigDecimal;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.eclipse.jdt.internal.compiler.batch.Main;
 
@@ -22,8 +28,27 @@ public static void main(String[] args) {
 //	System.out.println(s1.replace("ab","xx"));
 //	time();
 //	t1();
-	String default1 = getStringOrDefault("1",String.valueOf(1));
-	System.out.println(default1);
+//	String default1 = getStringOrDefault("1",String.valueOf(1));
+//	System.out.println(default1);
+	Map map =new HashMap();
+	map.put("abc",null);
+	map.put("c",new ArrayList());
+	map.put("time","20200521");
+	map.put("time1","2020052");
+	System.out.println(map.get("abc"));
+	System.out.println(map.get("c"));
+	System.out.println(map);
+	String ss="01,00";
+	System.out.println(ss.charAt(0));
+	System.out.println(ss.split(",").length);
+	System.out.println("".equals(""));
+	SimpleDateFormat sdf=new SimpleDateFormat("yyyyMMdd");
+
+	System.out.println(sdf.format(new Date()));
+	BigDecimal big = new BigDecimal("232");
+	System.out.println(big.subtract(new BigDecimal("234")));
+//	getDate();
+	
 }
 public static void time(){
 	Date date=new Date();
@@ -47,4 +72,19 @@ public static String getStringOrDefault(Object o,String str){
 	}
 	return str;
 }
-}
+//Date
+public static void  getDate(){
+	Date date=new Date();
+	System.out.println(date.getTime());
+	SimpleDateFormat sdf=new SimpleDateFormat("yyyyMMdd");
+	System.out.println(sdf.format(date));
+	String time="00000000";
+	SimpleDateFormat sss=new SimpleDateFormat("YYYYMMDD");
+	try {
+		System.out.println(sdf.format(sss.parse(time)));
+	} catch (ParseException e1) {
+		// TODO Auto-generated catch block
+		e1.printStackTrace();
+	}
+   
+}}
