@@ -14,28 +14,14 @@ import org.eclipse.jdt.internal.compiler.batch.Main;
 
 public class Hello {
 public static void main(String[] args) {
-//	System.out.println("Hello111222dfd");
-//	Calendar ca=Calendar.getInstance();
-//	System.out.println(ca.get(Calendar.MONTH));
-//	ca.add(Calendar.MONTH, 1);
-//	ca.set(Calendar.DAY_OF_MONTH,0);
-//	System.out.println(new SimpleDateFormat("yyyy-MM-dd").format(ca.getTime()));
-//	System.out.println(ca.get(Calendar.DAY_OF_MONTH));
-////	String ss="";
-////	boolean equals = ss.equals("a");
-////	System.out.println(equals);
-//	String s1="abc";
-//	System.out.println(s1.replace("ab","xx"));
-//	time();
-//	t1();
-//	String default1 = getStringOrDefault("1",String.valueOf(1));
-//	System.out.println(default1);
 	Map map =new HashMap();
 	map.put("abaac",null);
 	map.put("c",new ArrayList());
 	map.put("time","20200521");
 	map.put("time1","2020052");
-	System.out.println(map.get("abaac"));
+	map.put("t1",false);
+	System.out.println((ArrayList)map.get("abaac"));
+	System.out.println("~~~");
 	System.out.println(map.get("c"));
 	System.out.println(map);
 	String ss="01,00";
@@ -49,6 +35,16 @@ public static void main(String[] args) {
 	System.out.println(big.subtract(new BigDecimal("234")));
 //	getDate();
 	
+	String sss="  ";
+	System.out.println("length:>>"+sss.trim().length());
+  System.out.println("".equals(sss));
+map.put("t1",true);
+tt2(map);
+System.out.println(map);
+}
+
+public static void tt2(Map map){
+	map.put("hi","00");
 }
 public static void time(){
 	Date date=new Date();
