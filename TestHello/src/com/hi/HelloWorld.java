@@ -7,6 +7,7 @@ public class HelloWorld {
       System.out.println("我不是测试0510");
        System.out.println("我什么也不会");
        System.out.println("我是master");
+       System.out.println("我是one");
 	}
 
 }
