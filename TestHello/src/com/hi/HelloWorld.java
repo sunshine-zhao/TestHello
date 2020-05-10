@@ -8,6 +8,7 @@ public class HelloWorld {
        System.out.println("我什么也不会");
        System.out.println("我是master么");
        System.out.println("是Stash11么");
+       System.out.println("这是晚上的master");
 	}
 
 }
